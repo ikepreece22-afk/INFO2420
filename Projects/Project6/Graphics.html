@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NCU - Graphics</title>
+
+<style>
+
+body {
+    background-color: #FFE8C0;
+    background-image: url('images/2colback.jpg');
+    background-repeat: repeat-y;
+}
+
+#thumbs, #image {
+    width: 700px;
+    border: solid 1px #000;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: #000;
+    background: #eee;
+    padding: 5px;
+}
+
+#thumbs {
+    margin-top: 10px;
+}
+
+#thumbs img {
+    border: solid 1px #000;
+    margin: 5px;
+}
+
+#image {
+    height: 400px;
+}
+
+.instructions {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+</style>
+
+<script>
+
+    var PrintButton1 = new Image();
+    var PrintButton2 = new Image();
+    var logo1 = new Image();
+    var logo2 = new Image();
+
+    if (document.images) {
+        PrintButton1.src = "images/print1.jpg";
+        PrintButton2.src = "images/print2.jpg";
+        logo1.src = "images/Logo_1.jpeg";
+        logo2.src = "images/Logo_2.jpeg";
+    }
+
+    var imgArray = new Array(
+        'image1lg.jpg',
+        'image2lg.jpg',
+        'image3lg.jpg',
+        'image4lg.jpg'
+    );
+
+    var titleArray = new Array(
+        'Chef in Kitchen',
+        'Dutch Oven',
+        'Food Spread',
+        'Jello Cake'
+    );
+
+    var imgPath = "images/fullsize/";
+
+    function swapImage(imgID) {
+        var theImage = document.getElementById('theImage');
+        var textDiv = document.getElementById('bottomText');
+        var newImg;
+        var textTitle;
+        newImg = imgArray[imgID];
+        theImage.src = imgPath + newImg;
+        textTitle = titleArray[imgID];
+        textDiv.innerHTML = textTitle;
+    }
+
+    function preloadImages() {
+        for (var i = 0; i < imgArray.length; i++) {
+            var tmpImg = new Image();
+            tmpImg.src = imgPath + imgArray[i];
+        }
+    }
+
+</script>
+
+</head>
+<body onload="preloadImages()">
+
+<!-- Print Button Rollover -->
+<div class="center">
+    <a href="" onmouseover="document.getElementById('print').src='images/print2.jpg';" onmouseout="document.getElementById('print').src='images/print1.jpg';">
+        <img src="images/print1.jpg" width="200" height="50" id="print" alt="Print Page" style="border:none;">
+    </a>
+</div>
+
+<!-- Logo Rollover -->
+<div class="center">
+    <a href="" onmouseover="document.getElementById('logo').src='images/Logo_2.jpeg';" onmouseout="document.getElementById('logo').src='images/Logo_1.jpeg';">
+        <br>
+        <img src="images/Logo_1.jpeg" width="150" height="150" id="logo" alt="NCU Logo" style="border:none;">
+    </a>
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- Image Thumbnail Swap -->
+<div id="thumbs">
+    <img src="images/thumbnails/image1sm.jpg" alt="Chef in Kitchen" onmouseover="swapImage(0);">
+    <img src="images/thumbnails/image2sm.jpg" alt="Dutch Oven" onmouseover="swapImage(1);">
+    <img src="images/thumbnails/image3sm.jpg" alt="Food Spread" onmouseover="swapImage(2);">
+    <img src="images/thumbnails/image4sm.jpg" alt="Jello Cake" onmouseover="swapImage(3);">
+</div>
+
+<div id="image">
+    <img id="theImage" src="images/fullsize/image1lg.jpg" alt="Chef in Kitchen">
+    <h3 id="bottomText">Chef in Kitchen</h3>
+</div>
+
+<br>
+<br>
+
+<!-- Two-Column Background Image -->
+<div class="center">
+    <img src="images/2colback.jpg" alt="Two Column Background" width="900" height="150">
+</div>
+
+<br>
+<br>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer">
+        <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88">
+    </a>
+</p>
+
+</body>
+</html>
