@@ -11,7 +11,9 @@ header {
     background-color: #CCCCCC;
     text-align: center;
     padding-top: 10px;
-    border: dashed medium navy;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: navy;
     margin: auto;
 }
 
@@ -19,7 +21,7 @@ section {
     width: 760px;
     background-image: url('Images/inner_background.gif');
     background-repeat: repeat-y;
-    overflow: hidden;
+    overflow: hidden; 
     border-right: dashed medium navy;
     border-left: dashed medium navy;
     margin: auto;
@@ -28,14 +30,14 @@ section {
 nav {
     float: left;
     width: 110px;
-    padding-left: 10px;
+    padding-left: 10px; 
 }
 
 article {
     float: left;
     width: 600px;
     padding: 5px;
-    text-align: center;
+    text-align: center; 
 }
 
 footer {
@@ -54,16 +56,19 @@ footer {
 }
 
 nav a {
-    border: 2px inset #CCCCCC;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #CCCCCC;
     background-color: maroon;
     line-height: 250%;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 17px;
     text-decoration: none;
+    display: block;
 }
 
 nav a:hover {
     color: yellow;
-    border: 2px outset #CCCCCC;
+    border-style: outset;
 }
