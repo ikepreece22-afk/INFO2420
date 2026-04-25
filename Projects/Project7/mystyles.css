@@ -1,0 +1,182 @@
+/* mystyles.css - External Style Sheet for Native Cooking of Utah */
+
+/* Body Styles */
+body {
+    background-color: #f5f0e8;
+    margin: 0;
+    padding: 20px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3b2a1a;
+    text-align: center;
+}
+
+/* Centered Container */
+#container {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Header Styles */
+header {
+    width: 900px;
+    height: 120px;
+    background-color: #8b3a0f;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header img.logo {
+    float: left;
+    height: 110px;
+    margin: 5px 10px;
+}
+
+header img.banner {
+    float: left;
+    height: 110px;
+    margin: 5px 0;
+}
+
+/* Navigation Bar - nested inside header, floats right */
+nav {
+    width: 30%;
+    float: right;
+    height: 120px;
+    background-color: #6b2a0a;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+    color: #fff8f0;
+    background-color: #6b2a0a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #8b3a0f;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #c8601e;
+    color: #ffffff;
+}
+
+/* Section Styles */
+section {
+    width: 900px;
+    background-image: url('Images/background.jpg');
+    background-repeat: repeat-y;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Article Styles */
+article {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgba(255, 248, 240, 0.88);
+    box-sizing: border-box;
+}
+
+article h1 {
+    color: #8b3a0f;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: #6b2a0a;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+article p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Thumbnail image swap area */
+.thumbnails {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.thumbnails img.thumb {
+    width: 120px;
+    height: 90px;
+    margin: 5px;
+    border: 2px solid #8b3a0f;
+    cursor: pointer;
+}
+
+#fullimage {
+    display: block;
+    margin: 12px auto;
+    max-width: 420px;
+    border: 3px solid #8b3a0f;
+}
+
+/* Mini-tribute styles */
+.mini-tribute {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.mini-tribute img {
+    float: left;
+    width: 150px;
+    margin: 0 15px 10px 0;
+    border: 2px solid #8b3a0f;
+}
+
+.mini-tribute p {
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    width: 900px;
+    background-color: #8b3a0f;
+    color: #fff8f0;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    clear: both;
+}
+
+footer p {
+    margin: 2px 0;
+}
+
+footer a:link,
+footer a:visited {
+    color: #ffe4c4;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
