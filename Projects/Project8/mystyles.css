@@ -1,0 +1,315 @@
+/* mystyles.css - External Style Sheet for Native Cooking of Utah */
+
+/* Body Styles */
+body {
+    background-color: #f5f0e8;
+    margin: 0;
+    padding: 20px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3b2a1a;
+    text-align: center;
+}
+
+/* Centered Container */
+#container {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Header Styles */
+header {
+    width: 900px;
+    height: 120px;
+    background-color: #8b3a0f;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+header img.logo {
+    float: left;
+    height: 110px;
+    margin: 5px 10px;
+}
+
+header img.banner {
+    float: left;
+    height: 110px;
+    margin: 5px 0;
+}
+
+/* Navigation Bar - nested inside header, floats right */
+nav {
+    width: 30%;
+    float: right;
+    height: 120px;
+    background-color: #6b2a0a;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    text-align: center;
+    padding: 4px 0;
+    color: #fff8f0;
+    background-color: #6b2a0a;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #8b3a0f;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    background-color: #c8601e;
+    color: #ffffff;
+}
+
+/* Section Styles */
+section {
+    width: 900px;
+    background-image: url('Images/background.jpg');
+    background-repeat: repeat-y;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Article Styles */
+article {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    background-color: rgba(255, 248, 240, 0.88);
+    box-sizing: border-box;
+}
+
+article h1 {
+    color: #8b3a0f;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+article h2 {
+    color: #6b2a0a;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+article p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Thumbnail image swap area */
+.thumbnails {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.thumbnails img.thumb {
+    width: 120px;
+    height: 90px;
+    margin: 5px;
+    border: 2px solid #8b3a0f;
+    cursor: pointer;
+}
+
+#fullimage {
+    display: block;
+    margin: 12px auto;
+    max-width: 420px;
+    border: 3px solid #8b3a0f;
+}
+
+/* Mini-tribute styles */
+.mini-tribute {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.mini-tribute img {
+    float: left;
+    width: 150px;
+    margin: 0 15px 10px 0;
+    border: 2px solid #8b3a0f;
+}
+
+.mini-tribute p {
+    text-align: left;
+}
+
+/* Footer Styles */
+footer {
+    width: 900px;
+    background-color: #8b3a0f;
+    color: #fff8f0;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    clear: both;
+}
+
+footer p {
+    margin: 2px 0;
+}
+
+footer a:link,
+footer a:visited {
+    color: #ffe4c4;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* About Us page image styles */
+.about-photos {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.about-img {
+    width: 180px;
+    height: 140px;
+    margin: 8px;
+    border: 2px solid #8b3a0f;
+    object-fit: cover;
+}
+
+/* Tribute entry styles */
+.tribute-entry {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #c8a07a;
+    padding-bottom: 20px;
+}
+
+.tribute-entry img {
+    float: right;
+    width: 200px;
+    margin: 0 0 10px 15px;
+    border: 2px solid #8b3a0f;
+}
+
+.tribute-entry h2 {
+    color: #6b2a0a;
+}
+
+/* Print button styles */
+.print-btn {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.print-btn img {
+    width: 80px;
+    cursor: pointer;
+    border: none;
+}
+
+/* About Us page image styles */
+.about-photos {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.about-img {
+    width: 180px;
+    height: 140px;
+    margin: 8px;
+    border: 2px solid #8b3a0f;
+    object-fit: cover;
+}
+
+/* Tribute entry styles */
+.tribute-entry {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 1px solid #c8a07a;
+    padding-bottom: 20px;
+}
+
+.tribute-entry img {
+    float: right;
+    width: 200px;
+    margin: 0 0 10px 15px;
+    border: 2px solid #8b3a0f;
+}
+
+.tribute-entry h2 {
+    color: #6b2a0a;
+}
+
+/* Print button - shown on screen, hidden when printing via .print-off in print.css */
+a.print-off img {
+    width: 80px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 20px 0 0 auto;
+}
+
+/* Testimonial / Survey page styles */
+.testimonial-hero {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 400px;
+    border: 3px solid #8b3a0f;
+}
+
+.testimonial-entry {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.testimonial-entry h3 {
+    color: #8b3a0f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.thumbnailLeft {
+    float: left;
+    margin: 0 15px 10px 0;
+    border: 2px solid #8b3a0f;
+    max-width: 180px;
+}
+
+.thumbnailRight {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 2px solid #8b3a0f;
+    max-width: 180px;
+}
+
+/* Footer link to splash page */
+footer a:link,
+footer a:visited {
+    color: #ffe4c4;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

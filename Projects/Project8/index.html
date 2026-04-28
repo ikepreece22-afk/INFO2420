@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Native Cooking of Utah</title>
+<link rel="stylesheet" href="mystyles.css">
+<style>
+#splash-wrapper {
+    text-align: center;
+    padding: 30px 0;
+}
+#splash-wrapper h1 {
+    color: #8b3a0f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+#splash-wrapper p.tagline {
+    color: #6b2a0a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="splash-wrapper">
+
+<h1>Native Cooking of Utah</h1>
+<p class="tagline">Celebrating Utah's Culinary Heritage</p>
+<br>
+<p>Click a section to explore!</p>
+
+<!-- Image is 1120x960. Five labeled zones:
+     Home    = center oval  approx (280,330)-(780,720)
+     About US = top-left    approx (0,0)-(559,479) minus center
+     Favorites= top-right   approx (560,0)-(1119,479) minus center
+     Survey  = bottom-left  approx (0,480)-(559,959) minus center
+     Tributes = bottom-right approx (560,480)-(1119,959) minus center
+     Using poly for Home center, rect for four quadrants. Home listed first so it takes priority. -->
+<img src="Images/Image Collage.png" alt="Native Cooking of Utah Site Navigation Map" usemap="#navMap" width="1120" height="960">
+
+<map name="navMap">
+  <!-- Home - center oval (listed first, takes priority over quadrant rects) -->
+  <area shape="poly"
+        coords="280,330, 560,310, 780,330, 800,530, 780,720, 560,740, 280,720, 260,530"
+        href="Home.html"
+        alt="Home"
+        title="Go to Home Page">
+  <!-- About US - top-left quadrant -->
+  <area shape="rect" coords="0,0,559,479"
+        href="AboutUs.html"
+        alt="About Us"
+        title="Go to About Us Page">
+  <!-- Favorites - top-right quadrant -->
+  <area shape="rect" coords="560,0,1119,479"
+        href="Links.html"
+        alt="Favorites"
+        title="Go to Favorite Links Page">
+  <!-- Customer Survey - bottom-left quadrant -->
+  <area shape="rect" coords="0,480,559,959"
+        href="Survey.html"
+        alt="Customer Survey"
+        title="Go to Customer Survey Page">
+  <!-- Tributes - bottom-right quadrant -->
+  <area shape="rect" coords="560,480,1119,959"
+        href="Tributes.html"
+        alt="Tributes"
+        title="Go to Tributes Page">
+</map>
+
+</div>
+
+</body>
+</html>
